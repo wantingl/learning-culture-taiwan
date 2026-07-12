@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>月餅 · 中秋節故事</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Deconstructed mooncake card styles */
+    .deconstruct-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    @media (max-width: 500px) { .deconstruct-grid { grid-template-columns: 1fr; } }
+    .ingredient-card {
+      background: rgba(255,255,255,0.86);
+      border-radius: 18px;
+      padding: 20px 18px;
+      border: 1px solid rgba(255,255,255,0.96);
+      box-shadow: 0 2px 12px rgba(80,50,10,0.07);
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .ingredient-illus {
+      flex-shrink: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ing-crust { background: #F0DCA0; }
+    .ing-red   { background: #F0D0D0; }
+    .ing-lotus { background: #E8F0D0; }
+    .ing-yolk  { background: #F8ECC0; }
+    .ingredient-card h4 {
+      font-family: 'Noto Serif TC', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #2A1F5A;
+      margin-bottom: 4px;
+    }
+    .ingredient-card .en { font-size: 11px; color: #9A8A6A; margin-bottom: 5px; }
+    .ingredient-card p { font-size: 13px; color: #5A4E38; line-height: 1.7; }
+
+    /* Big assembled mooncake cross-section */
+    .cross-section-label {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      color: #8B6A1A;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <a href="../index.html" style="color:#C8B8F0;font-size:12px;font-weight:600;text-decoration:none;display:flex;align-items:center;gap:5px;white-space:nowrap;opacity:0.9;">← 所有節慶</a><p style="flex:1;text-align:center;">🌕 中秋節故事</p>
+    <a class="back-btn" href="index.html">
+      <svg viewBox="0 0 16 16"><polyline points="10,3 5,8 10,13"/></svg>
+      回首頁
+    </a>
+  </div>
+
+  <div class="detail-hero">
+    <div class="page-tag">中秋節習俗 · Tradition 01</div>
+    <h1>月餅</h1>
+    <div class="en-title">Mooncake</div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 48" width="100%" preserveAspectRatio="none">
+        <path d="M0,24 C180,4 360,44 540,24 C720,4 900,44 1080,24 C1260,4 1380,36 1440,24 L1440,48 L0,48 Z" fill="#F8F0E0" opacity="0.55"/>
+        <path d="M0,34 C240,10 480,46 720,30 C960,14 1200,44 1440,30 L1440,48 L0,48 Z" fill="#F8EEC8" opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Big cross-section illustration -->
+  <div class="illus-wrap">
+    <div class="illus-box" style="background: #FBF3E0;">
+      <svg viewBox="0 0 480 280" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="480" height="280" fill="#FBF3E0"/>
+
+        <!-- LEFT: whole mooncake -->
+        <text x="110" y="42" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#8B6A1A" font-weight="700">完整月餅</text>
+        <!-- Mooncake shadow -->
+        <ellipse cx="110" cy="218" rx="62" ry="10" fill="#D4A020" opacity="0.15"/>
+        <!-- Mooncake body -->
+        <rect x="52" y="58" width="116" height="156" rx="20" fill="#C47808"/>
+        <rect x="58" y="64" width="104" height="144" rx="16" fill="#E09020"/>
+        <!-- Pattern top band -->
+        <rect x="64" y="70" width="92" height="18" rx="4" fill="#C47808" opacity="0.5"/>
+        <!-- Flower pattern -->
+        <circle cx="110" cy="148" r="34" fill="#C47808" opacity="0.3"/>
+        <circle cx="110" cy="120" r="10" fill="#C47808" opacity="0.5"/>
+        <circle cx="110" cy="176" r="10" fill="#C47808" opacity="0.5"/>
+        <circle cx="84" cy="148" r="10" fill="#C47808" opacity="0.5"/>
+        <circle cx="136" cy="148" r="10" fill="#C47808" opacity="0.5"/>
+        <circle cx="110" cy="148" r="12" fill="#C47808" opacity="0.7"/>
+        <text x="110" y="153" text-anchor="middle" font-family="'Noto Serif TC', serif" font-size="16" fill="#F8E080" font-weight="700">月</text>
+        <!-- Sheen -->
+        <path d="M66,72 Q82,66 100,70" stroke="white" stroke-width="1.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+
+        <!-- Arrow pointing right -->
+        <line x1="190" y1="142" x2="232" y2="142" stroke="#C47808" stroke-width="2" stroke-dasharray="5,3"/>
+        <polygon points="232,138 240,142 232,146" fill="#C47808"/>
+        <text x="211" y="134" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#8B6A1A">切開看看</text>
+
+        <!-- RIGHT: cross-section -->
+        <text x="360" y="42" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="11" fill="#8B6A1A" font-weight="700">月餅剖面圖</text>
+        <!-- Cross section shadow -->
+        <ellipse cx="360" cy="218" rx="68" ry="10" fill="#D4A020" opacity="0.15"/>
+        <!-- Crust outer -->
+        <rect x="296" y="58" width="128" height="156" rx="20" fill="#C47808"/>
+        <!-- Lotus paste filling -->
+        <rect x="310" y="72" width="100" height="128" rx="12" fill="#A8C840"/>
+        <!-- Red bean option (half) -->
+        <rect x="310" y="72" width="50" height="128" rx="12" fill="#C85060"/>
+        <line x1="360" y1="72" x2="360" y2="200" stroke="white" stroke-width="1" opacity="0.3"/>
+        <!-- Egg yolk -->
+        <circle cx="360" cy="136" r="26" fill="#F0E0A0"/>
+        <circle cx="360" cy="136" r="18" fill="#E8C040"/>
+        <circle cx="360" cy="136" r="11" fill="#C89018"/>
+        <circle cx="354" cy="130" r="4" fill="#F0D060" opacity="0.5"/>
+        <!-- Layer labels -->
+        <!-- Crust label -->
+        <line x1="296" y1="100" x2="272" y2="100" stroke="#C47808" stroke-width="1.5"/>
+        <circle cx="270" cy="100" r="3" fill="#C47808"/>
+        <text x="265" y="95" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#8B5A08">餅皮</text>
+        <!-- Red bean label -->
+        <line x1="310" y1="88" x2="286" y2="78" stroke="#C85060" stroke-width="1.5"/>
+        <text x="278" y="74" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#C85060">紅豆沙</text>
+        <!-- Lotus label -->
+        <line x1="410" y1="88" x2="432" y2="78" stroke="#6A9820" stroke-width="1.5"/>
+        <text x="440" y="74" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#6A9820">蓮蓉</text>
+        <!-- Yolk label -->
+        <line x1="386" y1="136" x2="438" y2="136" stroke="#C89018" stroke-width="1.5"/>
+        <text x="450" y="140" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#8B6A08">鹹蛋黃</text>
+
+        <!-- Bottom labels -->
+        <text x="335" y="230" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#C85060">紅豆沙口味</text>
+        <text x="385" y="230" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="10" fill="#6A9820">蓮蓉口味</text>
+
+        <text x="240" y="265" text-anchor="middle" font-family="'Noto Sans TC', sans-serif" font-size="13" fill="#8B5A08" font-weight="500">切開月餅，裡面是什麼口味？</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="story-section">
+
+    <div class="story-card">
+      <div class="story-label">📖 故事時間</div>
+      <h2>月餅是怎麼來的？</h2>
+      <p>很久很久以前，月餅是大家在中秋節送給親朋好友的禮物，圓圓的形狀代表著<strong>圓滿和團圓</strong>，就像中秋節又圓又亮的月亮一樣！</p>
+      <p>傳說古代有一個故事，人們把秘密藏在月餅裡傳遞消息——所以月餅不只是好吃的食物，也是充滿智慧和故事的神奇點心！</p>
+      <p>現在的月餅有各種口味，有鹹蛋黃、紅豆沙、蓮蓉……每種口味都有自己的粉絲。你最想吃哪種？</p>
+    </div>
+
+    <!-- Deconstruct cards -->
+    <div class="cross-section-label">🔍 月餅大解構 · What's Inside?</div>
+    <div class="deconstruct-grid">
+
+      <div class="ingredient-card">
+        <div class="ingredient-illus ing-crust">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <rect x="6" y="8" width="36" height="32" rx="8" fill="#D4860A"/>
+            <rect x="10" y="12" width="28" height="24" rx="5" fill="#E8A030"/>
+            <text x="24" y="28" text-anchor="middle" font-family="'Noto Serif TC', serif" font-size="12" fill="#F8E080" font-weight="700">月</text>
+          </svg>
+        </div>
+        <div>
+          <h4>餅皮</h4>
+          <div class="en">Pastry Crust</div>
+          <p>柔軟又帶點甜，上面有美麗的花紋，烤出來金黃色超好看！</p>
+        </div>
+      </div>
+
+      <div class="ingredient-card">
+        <div class="ingredient-illus ing-red">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="18" fill="#C85060"/>
+            <circle cx="18" cy="20" r="4" fill="#A03040" opacity="0.6"/>
+            <circle cx="28" cy="16" r="3" fill="#A03040" opacity="0.5"/>
+            <circle cx="30" cy="28" r="3.5" fill="#A03040" opacity="0.6"/>
+            <circle cx="18" cy="30" r="3" fill="#A03040" opacity="0.5"/>
+          </svg>
+        </div>
+        <div>
+          <h4>紅豆沙</h4>
+          <div class="en">Red Bean Paste</div>
+          <p>把紅豆煮爛再磨成泥，甜甜的，是最經典的月餅內餡！</p>
+        </div>
+      </div>
+
+      <div class="ingredient-card">
+        <div class="ingredient-illus ing-lotus">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="18" fill="#A8C840"/>
+            <ellipse cx="20" cy="20" rx="5" ry="7" fill="#88A828" opacity="0.6" transform="rotate(-20 20 20)"/>
+            <ellipse cx="28" cy="28" rx="5" ry="7" fill="#88A828" opacity="0.5" transform="rotate(20 28 28)"/>
+            <circle cx="24" cy="24" r="5" fill="#C8DC60" opacity="0.7"/>
+          </svg>
+        </div>
+        <div>
+          <h4>蓮蓉</h4>
+          <div class="en">Lotus Paste</div>
+          <p>用蓮花的種子做成的餡料，淡淡的清香，口感超細緻！</p>
+        </div>
+      </div>
+
+      <div class="ingredient-card">
+        <div class="ingredient-illus ing-yolk">
+          <svg width="48" height="48" viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="18" fill="#F8E8C0"/>
+            <circle cx="24" cy="24" r="12" fill="#E8C040"/>
+            <circle cx="24" cy="24" r="7" fill="#C89018"/>
+            <circle cx="20" cy="20" r="3" fill="#F0D060" opacity="0.5"/>
+          </svg>
+        </div>
+        <div>
+          <h4>鹹蛋黃</h4>
+          <div class="en">Salted Egg Yolk</div>
+          <p>藏在月餅正中央，圓圓的像小月亮，鹹鹹香香是最大的驚喜！</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="fun-facts">
+      <div class="story-label">⚡ 超酷小知識</div>
+      <div class="fact-item">
+        <div class="fact-dot dot-green">🥮</div>
+        <p><strong>月餅為什麼是圓的？</strong>因為要像月亮一樣圓！圓形在中文文化裡代表完整和家人團圓，超有意義！</p>
+      </div>
+      <div class="fact-item">
+        <div class="fact-dot dot-blue">🍦</div>
+        <p><strong>現代月餅超奇特！</strong>現在有冰淇淋月餅、巧克力月餅，甚至還有抹茶口味——月餅也在不斷進化！</p>
+      </div>
+      <div class="fact-item">
+        <div class="fact-dot dot-peach">🎁</div>
+        <p><strong>月餅是最貴的禮物！</strong>中秋節前，大家都會送月餅禮盒給親朋好友，有些禮盒包裝超豪華，像珠寶盒一樣！</p>
+      </div>
+    </div>
+
+    <div class="try-card">
+      <div class="story-label">🎯 你可以這樣玩</div>
+      <h2>舉辦月餅試吃大賽！</h2>
+      <p>買幾種不同口味的月餅，切成小塊讓大家試吃，然後投票選出最喜歡的口味！記錄下每個人的第一名，看看家裡誰的口味最特別。不要偷看答案，先猜猜看裡面是什麼餡料！</p>
+    </div>
+
+  </div>
+
+  <div class="page-nav">
+    <a href="index.html" class="home-btn">
+      <svg viewBox="0 0 16 16"><path d="M2,9 L8,3 L14,9 M4,7.5 L4,14 L12,14 L12,7.5"/></svg>
+      回首頁
+    </a>
+    <a href="rabbit.html">
+      下一個：月兔與嫦娥
+      <svg viewBox="0 0 16 16"><polyline points="6,3 11,8 6,13"/></svg>
+    </a>
+  </div>
+
+</body>
+</html>
